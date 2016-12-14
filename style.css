@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway+Dots");
+body {
+  background: #fff;
+  color: #000;
+  font-family: "Raleway Dots", cursive; }
+
+p {
+  line-height: 1.7; }
+
+a {
+  text-decoration: none;
+  color: #673ab7;
+  font-weight: bold; }
+
+img {
+  position: fixed; }
+
+.left {
+  float: left; }
+
+.block {
+  margin: 5px; }
+
+.block__img {
+  width: 40%;
+  height: 100%; }
+
+.block__detail {
+  width: 50%;
+  height: 100%; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,84 @@
+------------------------------------------------------
+Role
+------------------------------------------------------
+/* สไตล์สำหรับ Block */
+.block { }
+ 
+/* สไตล์สำหรับ Element ต่างๆ ภายใน Block */
+.block__element { }
+ 
+/* สไตล์สำหรับ Block พิเศษ */
+.block--modifier { }
+ 
+/* สไตล์สำหรับ Element พิเศษ ภายใน Block */
+.block__element--modifier { }
+ 
+/* สไตล์สำหรับ Element ต่างๆ ภายใน Block พิเศษ */
+.block--modifier__element { }
+
+------------------------------------------------------
+Example
+------------------------------------------------------
+/* สไตล์ของกล่อง header */
+.header { }
+ 
+/* สไตล์ของกล่อง search ที่อยู่ในกล่อง header */
+.header__search { }
+
+/* สไตล์ของกล่อง login ที่อยู่ในกล่อง header */
+.header__login { }
+ 
+/* สไตล์ทั่วไปของกล่อง form */
+.form { }
+ 
+/* สไตล์ทั่วไปของ input ในกล่อง form */
+.form__input { }
+ 
+/* สไตล์พิเศษของกล่อง form ชนิด search  */
+.form--search { }
+
+/* สไตล์พิเศษของกล่อง form ชนิด login  */
+.form--login { }
+ 
+/* สไตล์ของ input แบบ submit ในกล่อง form  */
+.form__input--submit { }
+ 
+/* สไตล์ของปุ่ม submit ในกล่อง form ชนิด search  */
+.form--search__submit { }
+
+/* สไตล์ของปุ่ม submit ในกล่อง form ชนิด login  */
+.form--login__submit { }
+
+------------------------------------------------------
+Compiling sass with BEM
+------------------------------------------------------
+
+.header {
+  &__search {
+    /* .header__search */
+  }
+  &__login {
+    /* .header__login */
+  }
+}
+ 
+.form {
+  &--search {
+    /* .form--search */
+    &__submit {
+      /* .form--search__submit */
+    }
+  }
+  &--login {
+    /* .form--login */
+    &__submit {
+      /* .form--login__submit */
+    }
+  }
+  &__input {
+    /* .form__input */
+    &--submit {
+      /* .form__input--submit */
+    }
+  } 
+}

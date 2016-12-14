@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway+Dots');
+
+$widthSize : (
+	'block__img' 	: 40,
+	'img'           : 100,
+	'block__detail' : 50,
+);
+
+$heightSize : (
+	'block__img' 	: 100,
+	'img'           : 100,
+	'block__detail' : 100,
+);
+
+$primary-color-background: #fff;
+$primary-color-font: #000;
+$color-link: #673ab7;
+$primary-font : 'Raleway Dots', cursive;
+
+@function getWidthSizeScreen ($block) {
+	@return map-get($widthSize,$block);
+}
+
+@function getHeightSizeScreen ($block) {
+	@return map-get($heightSize,$block);
+}
+
+@mixin font-size ($size) {
+	font-size: $size + px;
+	font-size: ($size/10) + rem;
+}
+@mixin convertPercent ($width, $height){
+	width: ($width * 1%);
+	height: ($height * 1%);
+}
+
+body {
+	background: $primary-color-background;
+	color: $primary-color-font;
+	font-family : $primary-font;
+}
+p {
+	line-height : 1.7;
+}
+a {
+	text-decoration: none;
+	color: $color-link;
+	font-weight: bold;
+}
+img {
+	position : fixed;
+}
+.left {
+	float : left;
+}
+.block {
+	margin : 5px;
+}
+.block__img {
+	@include convertPercent(getWidthSizeScreen('block__img'), getHeightSizeScreen('block__img'));
+}
+
+.block__detail {
+	@include convertPercent(getWidthSizeScreen('block__detail'), getHeightSizeScreen('block__detail'));
+}
