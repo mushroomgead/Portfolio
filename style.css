@@ -1,32 +1,59 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway+Dots");
+@import url('https://fonts.googleapis.com/css?family=Athiti');
+
 body {
-  background: #fff;
-  color: #000;
-  font-family: "Raleway Dots", cursive; }
-
-p {
-  line-height: 1.7; }
-
+  font-family: 'Athiti', sans-serif;
+}
 a {
+  color: #d65696;
   text-decoration: none;
-  color: #673ab7;
-  font-weight: bold; }
+}
+.section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
 
-img {
-  position: fixed; }
+.about {
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
 
-.left {
-  float: left; }
+.my-img {
+  flex: 0.5;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
-.block {
-  margin: 5px; }
+.about-me {
+  flex: 1;
+  background: #ffffffad;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 30px;
+}
 
-.block__img {
-  width: 40%;
-  height: 100%; }
+.img {
+  width: 250px;
+}
 
-.block__detail {
-  width: 50%;
-  height: 100%; }
+.name {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
 
-/*# sourceMappingURL=style.css.map */
+.position {
+  text-align: center;
+}
+
+.line {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 0;
+  height: 1px;
+  background-color: #9e9e9e;
+}
+
+#typed-strings {
+  font-size: 1.5em;
+  text-align: center;
+}
